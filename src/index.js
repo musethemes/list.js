@@ -7,6 +7,7 @@ var naturalSort = require('string-natural-compare'),
   classes = require('./utils/classes'),
   getAttribute = require('./utils/get-attribute'),
   toArray = require('./utils/to-array')
+  latinise = require('./utils/latinise'),
 
 module.exports = function (id, options, values) {
   var self = this,

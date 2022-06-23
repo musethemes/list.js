@@ -28,6 +28,7 @@ module.exports = function (list) {
     },
     setSearchString: function (s) {
       s = list.utils.toString(s).toLowerCase()
+      s = s.latinise()
       s = s.replace(/[-[\]{}()*+?.,\\^$|#]/g, '\\$&') // Escape regular expression characters
       searchString = s
     },
@@ -64,6 +65,7 @@ module.exports = function (list) {
               column = columns[j]
             if (values.hasOwnProperty(column) && values[column] !== undefined && values[column] !== null) {
               var text = typeof values[column] !== 'string' ? values[column].toString() : values[column]
+              text = text.latinise()
               if (text.toLowerCase().indexOf(words[i]) !== -1) {
                 // word found, so no need to check it against any other columns
                 word_found = true

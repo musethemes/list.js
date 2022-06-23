@@ -1,3 +1,7 @@
+**CUSTOMISED VERSION WITH ADDED LATINISE SUPPORT - ISSUE (#694)**
+
+---
+
 # List.js
 
 Perfect library for adding **search**, **sort**, **filters** and **flexibility** to
